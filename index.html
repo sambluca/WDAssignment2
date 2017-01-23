@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tags for Internet Explorer and mobile devices -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A website</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts -->
+    <link rel="stylesheet" href="layout.css" /> </head>
+
+<body>
+    <main>
+        <nav class="page-nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Site title</h1>
+                <p>Site subtitle</p>
+            </div>
+        </header>
+        <section id="about" class="about-me container">
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    <!-- add your 150 word maximum About Me content here -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis elit id velit porta, at viverra turpis sollicitudin.
+                    Donec tincidunt sit amet erat vitae maximus. Duis congue, tortor quis porta commodo, diam orci lacinia
+                    enim, vel mattis enim sem vitae magna. Vestibulum id tortor nec justo eleifend accumsan ut eu dolor.
+                    Morbi eget magna sem. Sed sem eros, mollis quis convallis sit amet, gravida at odio. Aenean eget mi a
+                    magna faucibus placerat. Etiam eget magna efficitur, cursus velit et, convallis quam. Mauris rhoncus
+                    ac odio sed mollis. Suspendisse ornare posuere nisl quis aliquam. Vestibulum ante ipsum primis in faucibus
+                    orci luctus et ultrices posuere cubilia Curae; Donec dignissim libero ac ante posuere, eu gravida dolor
+                    faucibus. Cras nec elit vel tortor lacinia interdum tempus et mi. Vivamus semper diam quis hendrerit
+                    egestas. Vivamus aliquam maximus libero, vel consectetur odio imperdiet non. Phasellus eget porttitor
+                    mauris, vel viverra nibh. Mauris.
+                </div>
+            </div>
+        </section>
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                    <!-- add your 200 word maximum work experience content here -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at venenatis metus. Praesent non hendrerit
+                        nibh. Quisque consectetur, sapien condimentum rhoncus rutrum, mi tellus eleifend est, eget posuere
+                        libero magna et dui. Donec sed ultricies odio, non convallis lacus. Nam eget condimentum nulla. Nam
+                        volutpat et urna eget venenatis. In lorem risus, venenatis non mi nec, ornare feugiat ligula. Suspendisse
+                        convallis porta augue in scelerisque.</p>
+                    <p> Mauris vel ex mollis, hendrerit odio at, aliquam nisi. Curabitur semper arcu diam, nec fringilla leo
+                        vulputate nec. Sed at velit id ex vestibulum imperdiet non at metus. Vivamus ut turpis euismod, placerat
+                        ante eu, tempor velit. Vestibulum lacus turpis, dapibus id nulla at, pulvinar bibendum ante. Proin
+                        interdum in risus ac faucibus. Sed finibus scelerisque metus. Sed non est in sem suscipit pretium
+                        quis at libero. Morbi congue turpis leo, sed ornare metus luctus vel. In placerat felis in eros mattis,
+                        ornare mollis arcu semper. Suspendisse congue, enim eu placerat venenatis, urna lacus iaculis lorem,
+                        quis vestibulum sapien est sed neque. Vivamus euismod malesuada justo eget eleifend. Proin at leo
+                        tempus sapien aliquam ullamcorper. Praesent ut accumsan metus. Nunc eget massa at diam porta venenatis
+                        sed ac diam. Maecenas imperdiet, urna eu venenatis gravida.</p>
+                </div>
+            </div>
+        </section>
+        <section id="images" class="image-gallery container">
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+                    <div class="an-image">
+                        <!-- add image one here with 150 word maximum caption -->
+                        <img src="images/athens.jpg" alt="Manchester Metropolitan University Logo" height="103" width="91">
+                        <div class="image-caption"> </div>
+                    </div>
+                    <div class="an-image">
+                        <!-- add image two here with 150 word maximum caption -->
+                        <img src="images/macron.jpg" alt="Manchester Metropolitan University Logo" height="103" width="91">
+                        <div class="image-caption"> </div>
+                    </div>
+                    <div class="an-image">
+                        <!-- add image three here with 150 word maximum caption -->
+                        <img src="images/rome.jpg" alt="Manchester Metropolitan University Logo" height="103" width="91">
+                        <div class="image-caption"> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p> <span class="footer-text">&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2017</a>
+    </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Your name</span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">Tutor <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a></span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a>
+        </span> </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
