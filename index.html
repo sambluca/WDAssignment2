@@ -9,23 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Luca Tramontana Portfolio</title>
     <link rel="stylesheet" href="layout.css" /> </head>
-
-<body>
-    <main>
-        <nav class="page-nav">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#work">Work Experience</a></li>
-                <li><a href="#images">Image Gallery</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-        <header class="page-header">
+   <div class= "nav-header">
+       <header class="page-header header-container">
             <div class="header-content">
-                <h1>Gianluca Tramontana Portfolio</h1>
+            <h1 class="desktop-header">Gianluca Tramontana Portfolio</h1>
             </div>
         </header>
-        <section id="about" class="about-me container">
+        <nav class="page-nav header-container">
+
+
+            <ul>
+                <li class="nav-link"><a href="#about">About Me</a></li>
+                <li class="nav-link"><a href="#work">Work Experience</a></li>
+                <li class="nav-link"><a href="#images">Image Gallery</a></li>
+                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav></div>
+<body>
+    <main>
+     
+        <section id="about" class="about-me text-container">
             <div class="container-content">
                 <h2>About Me</h2>
                 <div class="content">
@@ -43,7 +46,7 @@
                 </div>
             </div>
         </section>
-        <section id="work" class="work-experience container">
+        <section id="work" class="work-experience text-container">
             <div class="container-content">
                 <h2>Work Experience</h2>
                 <div class="content">
@@ -79,13 +82,7 @@
                         consequat. Vivamus aliquet vulputate purus. Sed sit amet porta velit. Nulla quis justo dignissim
                         tortor aliquam posuere quis at felis. In mi justo, pellentesque in nisl vitae, porta malesuada mauris.
                         Donec vel fringilla metus. Morbi imperdiet, ex scelerisque tempus hendrerit, nulla massa feugiat
-                        ligula, nec dignissim lorem diam nec felis. Etiam eget auctor arcu, quis suscipit lectus. Vestibulum
-                        vestibulum velit tortor, nec vulputate est vestibulum quis. Cras eget risus arcu. Nam iaculis ante
-                        quis fermentum blandit. Suspendisse elementum elit non turpis vulputate, vitae vulputate velit ornare.
-                        Quisque diam mauris, viverra ut augue eu, congue convallis lorem. Maecenas placerat, ipsum eget mollis
-                        malesuada, mauris nisi eleifend augue, elementum tristique magna tortor a ligula. Duis viverra lacus
-                        sed semper euismod. Integer porttitor mi eget ante condimentum facilisis. Quisque nec viverra sapien,
-                        ut mattis tellus. In.
+                        ligula, nec dignissim lorem diam nec felis. Etiam eget auctor arcu, quis suscipit lectus.
                     </div>
                     <div class="image-container">
                         <!-- add image two here with 150 word maximum caption -->
@@ -97,13 +94,7 @@
                         consequat. Vivamus aliquet vulputate purus. Sed sit amet porta velit. Nulla quis justo dignissim
                         tortor aliquam posuere quis at felis. In mi justo, pellentesque in nisl vitae, porta malesuada mauris.
                         Donec vel fringilla metus. Morbi imperdiet, ex scelerisque tempus hendrerit, nulla massa feugiat
-                        ligula, nec dignissim lorem diam nec felis. Etiam eget auctor arcu, quis suscipit lectus. Vestibulum
-                        vestibulum velit tortor, nec vulputate est vestibulum quis. Cras eget risus arcu. Nam iaculis ante
-                        quis fermentum blandit. Suspendisse elementum elit non turpis vulputate, vitae vulputate velit ornare.
-                        Quisque diam mauris, viverra ut augue eu, congue convallis lorem. Maecenas placerat, ipsum eget mollis
-                        malesuada, mauris nisi eleifend augue, elementum tristique magna tortor a ligula. Duis viverra lacus
-                        sed semper euismod. Integer porttitor mi eget ante condimentum facilisis. Quisque nec viverra sapien,
-                        ut mattis tellus. In.
+                        ligula, nec dignissim lorem diam nec felis. Etiam eget auctor arcu, quis suscipit lectus.
                     </div>
                     <div class="image-container">
                         <!-- add image three here with 150 word maximum caption -->
@@ -115,40 +106,33 @@
                             Nulla quis justo dignissim tortor aliquam posuere quis at felis. In mi justo, pellentesque in
                             nisl vitae, porta malesuada mauris. Donec vel fringilla metus. Morbi imperdiet, ex scelerisque
                             tempus hendrerit, nulla massa feugiat ligula, nec dignissim lorem diam nec felis. Etiam eget
-                            auctor arcu, quis suscipit lectus. Vestibulum vestibulum velit tortor, nec vulputate est vestibulum
-                            quis. Cras eget risus arcu. Nam iaculis ante quis fermentum blandit. Suspendisse elementum elit
-                            non turpis vulputate, vitae vulputate velit ornare. Quisque diam mauris, viverra ut augue eu,
-                            congue convallis lorem. Maecenas placerat, ipsum eget mollis malesuada, mauris nisi eleifend
-                            augue, elementum tristique magna tortor a ligula. Duis viverra lacus sed semper euismod. Integer
-                            porttitor mi eget ante condimentum facilisis. Quisque nec viverra sapien, ut mattis tellus. In.
+                            auctor arcu, quis suscipit lectus.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact-me container">
+        <section id="contact" class="contact-me">
             <div class="container-content">
                 <h2>Contact Me</h2>
-                <div class="content">
-                    <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
-                        <p>
-                            <label for="contact-name">Your Name</label>
-                            <input id="contact-name" type="text" name="contact-name" />
-                        </p>
-                        <p>
-                            <label for="contact-email">Your email address</label>
-                            <input id="contact-email" type="email" name="contact-email" /> </p>
-                        <p>
-                            <label for="contact-phone">Your phone number</label>
-                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
-                        <p>
-                            <label for="contact-message">Your message</label>
-                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
-                        </p>
-                        <p>
-                            <input type="submit" value="send my message" /> </p>
-                    </form>
-                </div>
+                <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
+                    <p>
+                        <label for="contact-name">Your Name</label>
+                        <input id="contact-name" type="text" name="contact-name" class="input" />
+                    </p>
+                    <p>
+                        <label for="contact-email">Your email address</label>
+                        <input id="contact-email" type="email" name="contact-email" class="input" /> </p>
+                    <p>
+                        <label for="contact-phone">Your phone number</label>
+                        <input id="contact-phone" type="tel" name="contact-phone" class="input" /> </p>
+                    <p>
+                        <label for="contact-message">Your message</label>
+                        <textarea id="contact-message" name="contact-message" rows="5" class="input"> </textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="send my message" /> </p>
+                </form>
             </div>
         </section>
         <footer class="page-footer">

@@ -1,28 +1,149 @@
-        .image-container {
-        width: 30%;
-        text-align: center;
-        border: 1px solid #c30;
-                display: inline-block;
-
-        
-    }
-
-    .image-circle {
-        border-radius: 50%;
-        /*Sets a circle on the image*/
-        overflow: hidden;
-        /*Hides the image not in the circle */
-        width: 25vw;
-        /* Sets the width of the circle to 20 viewport width*/
-        height: 25vw;
-        /* Sets the width of the circle to 20 viewport width, I use width here as well so that the radius is consistent*/
-        margin: 0 auto;
-        /* Centres it */
-    }
-    
-    .image-gallery {
-        height: 100%;
-        /* Makes the picture centre in the circle */
-    width: 100%;
-}
-
+                    body {
+                        font-family: "Arial", Gadget, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 100%;
+                        line-height: 1;
+                        margin-top: 20vh;
+                    }
+                    
+                    .image-container {
+                        width: 30%;
+                        text-align: center;
+                        border: 1px solid #c30;
+                        display: inline-block;
+                    }
+                    
+                    .image-circle {
+                        border-radius: 50%;
+                        overflow: hidden;
+                        width: 25vw;
+                        height: 25vw;
+                        margin: 0 auto;
+                    }
+                    
+                    .image-gallery {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    
+                    .nav-header {
+                        background-color: grey;
+                        position: fixed;
+                        top: 0;
+                        font-size: 80%;
+                        width: 100%;
+                    }
+                    
+                    .page-nav {
+                        font-family: "Arial", Gadget, sans-serif;
+                        border: 1px solid #c30;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    
+                    .nav-link {
+                        display: inline-block;
+                        border: 1px solid #c30;
+                        padding-left: 1vw;
+                        padding-right: 1vw;
+                        padding-top: 1vw;
+                        padding-bottom: 1vw;
+                        background-color: white;
+                    }
+                    
+                    .nav-link a {
+                        text-decoration: none;
+                    }
+                    
+                    .page-header {
+                        text-align: center;
+                    }
+                    
+                    .container {
+                        border: 1px solid #c30;
+                        text-align: center;
+                    }
+                    
+                    .text-container {
+                        border: 1px solid #c30;
+                        text-align: center;
+                        margin: 0 auto;
+                        width: 75vw;
+                    }
+                    
+                    .contact-me {
+                        border: 1px solid #c30;
+                    }
+                    
+                    @media screen and (max-width: 867px) {
+                        .image-container {
+                            width: 40%;
+                            border: 1px solid blue;
+                        }
+                        .image-circle {
+                            width: 40vw;
+                            height: 40vw;
+                        }
+                        .text-container {
+                            width: 75%;
+                            border: 1px solid blue;
+                        }
+                        .page-nav li.nav-link {
+                            display: inline-block;
+                            border: 1px solid #c30;
+                            padding-left: 1vw;
+                            padding-right: 1vw;
+                            padding-top: 2vw;
+                            padding-bottom: 2vw;
+                        }
+                        .page-header {
+                            font-size: 1.5vw;
+                            text-align: center;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 638px) {
+                        .page-nav {
+                            border: 1px solid green;
+                        }
+                        .page-nav li {
+                            border: 1px solid green;
+                        }
+                        .image-container {
+                            width: 80%;
+                            border: 1px solid green;
+                        }
+                        .image-circle {
+                            width: 50vw;
+                            height: 50vw;
+                        }
+                        .text-container {
+                            width: 80%;
+                            border: 1px solid green;
+                        }
+                        .page-header {
+                            font-size: 2vw;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 562px) {
+                        .image-container {
+                            width: 100%;
+                            border: 1px solid green;
+                        }
+                        .text-container {
+                            width: 100%;
+                            border: 1px solid blue;
+                        }
+                        .page-nav {
+                            text-align: left;
+                        }
+                        .page-header {
+                            font-size: 1.5vw;
+                            text-align: left;
+                        }
+                        .page-header {
+                            font-size: 2.5vw;
+                        }
+                    }
