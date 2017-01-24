@@ -4,7 +4,7 @@
                         padding: 0;
                         font-size: 100%;
                         line-height: 1;
-                        margin-top: 20vh;
+                        margin-top: 13vh;
                     }
                     
                     .image-container {
@@ -40,6 +40,7 @@
                         border: 1px solid #c30;
                         width: 100%;
                         text-align: center;
+                        height: 9vh;
                     }
                     
                     .nav-link {
@@ -56,8 +57,10 @@
                         text-decoration: none;
                     }
                     
+                    
                     .page-header {
                         text-align: center;
+                        height: 4vh;
                     }
                     
                     .container {
@@ -89,14 +92,7 @@
                             width: 75%;
                             border: 1px solid blue;
                         }
-                        .page-nav li.nav-link {
-                            display: inline-block;
-                            border: 1px solid #c30;
-                            padding-left: 1vw;
-                            padding-right: 1vw;
-                            padding-top: 2vw;
-                            padding-bottom: 2vw;
-                        }
+                       
                         .page-header {
                             font-size: 1.5vw;
                             text-align: center;
