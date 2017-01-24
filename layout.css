@@ -4,7 +4,7 @@
                         padding: 0;
                         font-size: 100%;
                         line-height: 1;
-                        margin-top: 13vh;
+                        margin-top: 15vh;
                     }
                     
                     .image-container {
@@ -37,7 +37,6 @@
                     
                     .page-nav {
                         font-family: "Arial", Gadget, sans-serif;
-                        border: 1px solid #c30;
                         width: 100%;
                         text-align: center;
                         height: 9vh;
@@ -45,7 +44,6 @@
                     
                     .nav-link {
                         display: inline-block;
-                        border: 1px solid #c30;
                         padding-left: 1vw;
                         padding-right: 1vw;
                         padding-top: 1vw;
@@ -57,32 +55,29 @@
                         text-decoration: none;
                     }
                     
-                    
                     .page-header {
                         text-align: center;
                         height: 4vh;
                     }
                     
                     .container {
-                        border: 1px solid #c30;
                         text-align: center;
                     }
                     
                     .text-container {
-                        border: 1px solid #c30;
                         text-align: center;
                         margin: 0 auto;
                         width: 75vw;
                     }
                     
-                    .contact-me {
-                        border: 1px solid #c30;
+                    .int-link {
+                        padding-top: 15vh;
+                        margin-top: -15vh;
                     }
                     
                     @media screen and (max-width: 867px) {
                         .image-container {
                             width: 40%;
-                            border: 1px solid blue;
                         }
                         .image-circle {
                             width: 40vw;
@@ -90,9 +85,7 @@
                         }
                         .text-container {
                             width: 75%;
-                            border: 1px solid blue;
                         }
-                       
                         .page-header {
                             font-size: 1.5vw;
                             text-align: center;
@@ -100,23 +93,11 @@
                     }
                     
                     @media screen and (max-width: 638px) {
-                        .page-nav {
-                            border: 1px solid green;
-                        }
-                        .page-nav li {
-                            border: 1px solid green;
-                        }
-                        .image-container {
+                        page-container {
                             width: 80%;
-                            border: 1px solid green;
-                        }
-                        .image-circle {
-                            width: 50vw;
-                            height: 50vw;
                         }
                         .text-container {
                             width: 80%;
-                            border: 1px solid green;
                         }
                         .page-header {
                             font-size: 2vw;
@@ -125,19 +106,31 @@
                     
                     @media screen and (max-width: 562px) {
                         .image-container {
-                            width: 100%;
-                            border: 1px solid green;
+                            width: 80%;
                         }
                         .text-container {
-                            width: 100%;
-                            border: 1px solid blue;
+                            width: 80%;
                         }
-                     
                         .page-header {
                             font-size: 1.5vw;
-
                         }
                         .page-header {
                             font-size: 2.5vw;
                         }
                     }
+
+                      @media screen and (max-width: 440px) {
+                        .image-container {
+                            width: 100%;
+                        }
+                        .text-container {
+                            width: 100%;
+                        }
+                        .page-header {
+                            font-size: 1.5vw;
+                        }
+                        .page-header {
+                            font-size: 2.5vw;
+                        }
+                    }
+                    

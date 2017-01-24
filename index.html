@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+    <script>
+    function showBox(el_id) {
+    window.scrollTo(0, 0);
+    var element = document.getElementById('box_' + el_id);
+    var rect = element.getBoundingClientRect();
+    var TheTop = rect.top;
+    window.scrollTo(0, TheTop - 40);
+}</script>
 
 <head>
     <meta charset="UTF-8">
@@ -28,9 +36,9 @@
 <body>
     <main>
      
-        <section id="about" class="about-me text-container">
+        <section  id="about" class="about-me text-container int-link">
             <div class="container-content">
-                <h2>About Me</h2>
+                <h2 >About Me</h2>
                 <div class="content">
                     <!-- add your 150 word maximum About Me content here -->
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis elit id velit porta, at viverra turpis sollicitudin.
@@ -46,7 +54,7 @@
                 </div>
             </div>
         </section>
-        <section id="work" class="work-experience text-container">
+        <section id="work" class="work-experience text-container int-link">
             <div class="container-content">
                 <h2>Work Experience</h2>
                 <div class="content">
@@ -68,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <section id="images" class="image-gallery container">
+        <section id="images" class="image-gallery container int-link">
             <div class="container-content">
                 <h2>Image Gallery</h2>
                 <div class="content">
@@ -112,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact-me">
+        <section id="contact" class="contact-me int-link">
             <div class="container-content">
                 <h2>Contact Me</h2>
                 <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
