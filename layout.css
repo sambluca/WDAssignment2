@@ -141,6 +141,8 @@ body {
     }
     .nav-link {
         display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .nav-link:hover {
         background-color: grey;
@@ -173,6 +175,14 @@ body {
     .ul-links.shown {
         display: initial;
     }
+
+    .bdy.shown {
+        margin: 195px 0px 0px 0px;
+    }
+        .int-link.shown {
+        padding-top: 205px;
+        margin-top: -205px;
+    }
     .int-link {
         padding-top: 70px;
         margin-top: -70px;
@@ -183,7 +193,7 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    .page-header {
+    /*.page-header {
     height: 50px;}
         .int-link {
             padding-top: 80px;
@@ -191,7 +201,8 @@ body {
 
             body {
                 margin: 80px 0px 0px 0px;
-            }
-        }
+            }*/
+    .nav-header {
+        font-size: 60%;
     }
 }
