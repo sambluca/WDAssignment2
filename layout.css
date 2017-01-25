@@ -4,7 +4,7 @@
                         padding: 0;
                         font-size: 100%;
                         line-height: 1;
-                        margin-top: 15vh;
+                        margin-top: 70px;
                     }
                     
                     .image-container {
@@ -39,7 +39,7 @@
                         font-family: "Arial", Gadget, sans-serif;
                         width: 100%;
                         text-align: center;
-                        height: 9vh;
+                        height: 40px;
                     }
                     
                     .nav-link {
@@ -57,7 +57,7 @@
                     
                     .page-header {
                         text-align: center;
-                        height: 4vh;
+                        height: 20px;
                     }
                     
                     .container {
@@ -71,8 +71,8 @@
                     }
                     
                     .int-link {
-                        padding-top: 15vh;
-                        margin-top: -15vh;
+                        padding-top: 70px;
+                        margin-top: -70px;
                     }
                     
                     @media screen and (max-width: 867px) {
@@ -132,5 +132,10 @@
                         .page-header {
                             font-size: 2.5vw;
                         }
+                            .page-nav {
+                        text-align: left;
+                        
                     }
+                    }
+
                     
