@@ -175,13 +175,12 @@ body {
     .ul-links.shown {
         display: initial;
     }
-
     .bdy.shown {
         margin: 195px 0px 0px 0px;
     }
-        .int-link.shown {
-        padding-top: 205px;
-        margin-top: -205px;
+    .int-link.shown {
+        padding-top: 200px;
+        margin-top: -200px;
     }
     .int-link {
         padding-top: 70px;
@@ -193,16 +192,10 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    /*.page-header {
-    height: 50px;}
-        .int-link {
-            padding-top: 80px;
-        margin-top: -80px;}
-
-            body {
-                margin: 80px 0px 0px 0px;
-            }*/
     .nav-header {
         font-size: 60%;
+    }
+    .bdy.shown {
+        margin: 185px 0px 0px 0px;
     }
 }
