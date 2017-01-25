@@ -39,7 +39,7 @@ body {
 }
 
 .nav-header {
-    background-color: grey;
+    background-color: #ffdf43;
     position: fixed;
     top: 0;
     font-size: 80%;
@@ -51,7 +51,7 @@ body {
     width: 100%;
     text-align: center;
     height: 40px;
-    background-color: grey;
+    background-color: #ffdf43;
 }
 
 .nav-inline {
@@ -151,7 +151,7 @@ body {
         padding-bottom: 10px;
     }
     .nav-link:hover {
-        background-color: grey;
+        background-color: #ffdf43;
     }
     .show-nav-button {
         display: initial;
