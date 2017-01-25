@@ -18,7 +18,6 @@ body {
 .image-container {
     width: 30%;
     text-align: center;
-    border: 1px solid #c30;
     display: inline-block;
 }
 
@@ -33,6 +32,10 @@ body {
 .image-gallery {
     height: 100%;
     width: 100%;
+}
+
+.image-caption{
+    margin-top: 20px
 }
 
 .nav-header {
@@ -90,9 +93,12 @@ body {
     margin-top: -80px;
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 921px) {
     .image-container {
         width: 40%;
+         margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     }
     .image-circle {
         width: 40vw;
