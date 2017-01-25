@@ -159,6 +159,7 @@ body {
         height: 100%;
         background-color: black;
         text-align: right;
+        font-size: 15px;
         color: white;
         outline: none;
         border: none;
@@ -171,6 +172,8 @@ body {
     }
     .page-nav {
         text-align: left;
+                font-size: 15px;
+
         background-color: black;
         height: 30px;
         width: 100%;
@@ -182,11 +185,11 @@ body {
         display: initial;
     }
     .bdy.shown {
-        margin: 195px 0px 0px 0px;
+        margin: 209px 0px 0px 0px;
     }
     .int-link.shown {
-        padding-top: 200px;
-        margin-top: -200px;
+        padding-top: 209px;
+        margin-top: -209px;
     }
     .int-link {
         padding-top: 70px;
@@ -202,6 +205,6 @@ body {
         font-size: 60%;
     }
     .bdy.shown {
-        margin: 185px 0px 0px 0px;
+        margin: 209px 0px 0px 0px;
     }
 }
