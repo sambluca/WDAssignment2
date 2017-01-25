@@ -63,7 +63,7 @@ body {
     background-color: white;
 }
 
-.nav-link a {
+.nav-inline a {
     text-decoration: none;
     color: black;
 }
