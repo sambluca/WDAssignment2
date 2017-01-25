@@ -11,9 +11,10 @@ body {
     padding: 0;
 }
 
-.show-nav-button{
+.show-nav-button {
     display: none;
 }
+
 .image-container {
     width: 30%;
     text-align: center;
@@ -36,7 +37,6 @@ body {
 
 .nav-header {
     background-color: grey;
-    
     position: fixed;
     top: 0;
     font-size: 80%;
@@ -50,7 +50,9 @@ body {
     height: 40px;
     background-color: grey;
 }
-
+.nav-inline{
+    display: inline-block;
+}
 .nav-link {
     display: inline-block;
     border: 1px solid black;
@@ -63,6 +65,7 @@ body {
 
 .nav-link a {
     text-decoration: none;
+    color: black;
 }
 
 .page-header {
@@ -108,7 +111,7 @@ body {
     .text-container {
         width: 80%;
     }
-    .page-header {}
+
 }
 
 @media screen and (max-width: 562px) {
@@ -139,31 +142,41 @@ body {
         display: block;
     }
 
-    .show-nav-button{
+    .nav-link:hover{
+        background-color: grey;
+    }
+    .show-nav-button {
         display: initial;
-        
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        text-align: right;
+        color: white;
+            outline: none;
+
+        border: none;
     }
     .ul-links {
         display: none;
     }
-    .page-header{
-            height: 30px;
-
+    .page-header {
+        height: 30px;
     }
     .page-nav {
         text-align: left;
-    background-color: black;
-    height: 30px;
-
+        background-color: black;
+        height: 30px;
         width: 100%;
     }
-
+    .nav-inline{
+        display: block;
+    }
     .ul-links.shown {
         display: initial;
     }
     .int-link {
-        padding-top: 140px;
-        margin-top: -140px;
+        padding-top: 70px;
+        margin-top: -70px;
     }
     body {
         margin: 60px 0px 0px 0px;

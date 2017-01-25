@@ -7,7 +7,8 @@ document.getElementById("ul-links").classList.toggle("shown");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-document.querySelector('#menu-btn').addEventListener('click', buttonClick)
+document.querySelector('#menu-btn').addEventListener('click', buttonClick);
+
 });
 </script>
 
@@ -28,10 +29,10 @@ document.querySelector('#menu-btn').addEventListener('click', buttonClick)
         <nav class="page-nav header-container ">
             <button id="menu-btn" class="show-nav-button">Click me</button>
             <ul id="ul-links" class="ul-links">
-                <li id="nav-link" class="nav-link"><a href="#about">About Me</a></li>
-                <li class="nav-link"><a href="#work">Work Experience</a></li>
-                <li class="nav-link"><a href="#images">Image Gallery</a></li>
-                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+                <li class="nav-inline"><a href="#about"><div class="nav-link">about</div></a></li>
+                <li class="nav-inline"><a href="#work"><div class="nav-link">work experience</div></a></li>
+                <li class="nav-inline"><a href="#images"><div class="nav-link">images</div></a></li>
+                <li class="nav-inline"><a href="#contact"><div class="nav-link">contact</div></a></li>
             </ul>
         </nav></div>
 <body>
