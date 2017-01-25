@@ -4,7 +4,11 @@
 
 function buttonClick(){
 document.getElementById("ul-links").classList.toggle("shown");
+document.getElementById("bdy").classList.toggle("shown");
+document.getElementsByClassName("int-link").classList.toggle("shown");
+
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
 document.querySelector('#menu-btn').addEventListener('click', buttonClick);
@@ -35,7 +39,7 @@ document.querySelector('#menu-btn').addEventListener('click', buttonClick);
                 <li class="nav-inline"><a href="#contact"><div class="nav-link">contact</div></a></li>
             </ul>
         </nav></div>
-<body>
+<body id="bdy"class = "bdy">
     <main>
      
         <section  id="about" class="about-me text-container int-link">
