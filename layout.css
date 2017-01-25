@@ -1,146 +1,171 @@
-                    body {
-                        font-family: "Arial", Gadget, sans-serif;
-                        margin: 0;
-                        padding: 0;
-                        font-size: 100%;
-                        line-height: 1;
-                        margin-top: 70px;
-                    }
-                    
-                    .image-container {
-                        width: 30%;
-                        text-align: center;
-                        border: 1px solid #c30;
-                        display: inline-block;
-                    }
-                    
-                    .image-circle {
-                        border-radius: 50%;
-                        overflow: hidden;
-                        width: 25vw;
-                        height: 25vw;
-                        margin: 0 auto;
-                    }
-                    
-                    .image-gallery {
-                        height: 100%;
-                        width: 100%;
-                    }
-                    
-                    .nav-header {
-                        background-color: grey;
-                        position: fixed;
-                        top: 0;
-                        font-size: 80%;
-                        width: 100%;
-                    }
-                    
-                    .page-nav {
-                        font-family: "Arial", Gadget, sans-serif;
-                        width: 100%;
-                        text-align: center;
-                        height: 40px;
-                    }
-                    
-                    .nav-link {
-                        display: inline-block;
-                        border: 1px solid black;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        padding-top: 1vw;
-                        padding-bottom: 1vw;
-                        background-color: white;
-                    }
-                    
-                    .nav-link a {
-                        text-decoration: none;
-                    }
-                    
-                    .page-header {
-                        text-align: center;
-                        height: 20px;
-                    }
-                    
-                    .container {
-                        text-align: center;
-                    }
-                    
-                    .text-container {
-                        text-align: center;
-                        margin: 0 auto;
-                        width: 75vw;
-                    }
-                    
-                    .int-link {
-                        padding-top: 70px;
-                        margin-top: -70px;
-                    }
-                    
-                    @media screen and (max-width: 867px) {
-                        .image-container {
-                            width: 40%;
-                        }
-                        .image-circle {
-                            width: 40vw;
-                            height: 40vw;
-                        }
-                        .text-container {
-                            width: 75%;
-                        }
-                        .page-header {
-                            font-size: 1.5vw;
-                            text-align: center;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 638px) {
-                        page-container {
-                            width: 80%;
-                        }
-                        .text-container {
-                            width: 80%;
-                        }
-                        .page-header {
-                            font-size: 2vw;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 562px) {
-                        .image-container {
-                            width: 80%;
-                        }
-                        .text-container {
-                            width: 80%;
-                        }
-                        .page-header {
-                            font-size: 1.5vw;
-                        }
-                        .page-header {
-                            font-size: 2.5vw;
-                        }
-                    }
+body {
+    font-family: "Arial", Gadget, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+    margin-top: 80px;
+}
 
-                      @media screen and (max-width: 440px) {
-                          .image-circle {
-                            width: 60vw;
-                            height: 60vw;
-                        }
-                        .image-container {
-                            width: 85%;
-                        }
-                        .text-container {
-                            width: 85%;
-                        }
-                        .page-header {
-                            font-size: 1.5vw;
-                        }
-                        .page-header {
-                            font-size: 2.5vw;
-                        }
-                            .page-nav {
-                        text-align: left;
-                        margin:0 auto;
-                    }
-                    }
+* {
+    padding: 0;
+}
 
-                    
+.show-nav-button{
+    display: none;
+}
+.image-container {
+    width: 30%;
+    text-align: center;
+    border: 1px solid #c30;
+    display: inline-block;
+}
+
+.image-circle {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vw;
+    margin: 0 auto;
+}
+
+.image-gallery {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-header {
+    background-color: grey;
+    
+    position: fixed;
+    top: 0;
+    font-size: 80%;
+    width: 100%;
+}
+
+.page-nav {
+    font-family: "Arial", Gadget, sans-serif;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background-color: grey;
+}
+
+.nav-link {
+    display: inline-block;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+.nav-link a {
+    text-decoration: none;
+}
+
+.page-header {
+    text-align: center;
+    height: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.text-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 75vw;
+}
+
+.int-link {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+@media screen and (max-width: 867px) {
+    .image-container {
+        width: 40%;
+    }
+    .image-circle {
+        width: 40vw;
+        height: 40vw;
+    }
+    .text-container {
+        width: 75%;
+    }
+    .page-header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    page-container {
+        width: 80%;
+    }
+    .text-container {
+        width: 80%;
+    }
+    .page-header {}
+}
+
+@media screen and (max-width: 562px) {
+    .image-circle {
+        width: 60vw;
+        height: 60vw;
+    }
+    .image-container {
+        width: 90%;
+    }
+    .text-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .image-circle {
+        width: 60vw;
+        height: 60vw;
+    }
+    .image-container {
+        width: 100%;
+    }
+    .text-container {
+        width: 100%;
+    }
+    .nav-link {
+        display: block;
+    }
+
+    .show-nav-button{
+        display: initial;
+        
+    }
+    .ul-links {
+        display: none;
+    }
+    .page-header{
+            height: 30px;
+
+    }
+    .page-nav {
+        text-align: left;
+    background-color: black;
+    height: 30px;
+
+        width: 100%;
+    }
+
+    .ul-links.shown {
+        display: initial;
+    }
+    .int-link {
+        padding-top: 140px;
+        margin-top: -140px;
+    }
+    body {
+        margin: 60px 0px 0px 0px;
+    }
+}
