@@ -50,9 +50,11 @@ body {
     height: 40px;
     background-color: grey;
 }
-.nav-inline{
+
+.nav-inline {
     display: inline-block;
 }
+
 .nav-link {
     display: inline-block;
     border: 1px solid black;
@@ -111,7 +113,6 @@ body {
     .text-container {
         width: 80%;
     }
-
 }
 
 @media screen and (max-width: 562px) {
@@ -141,19 +142,17 @@ body {
     .nav-link {
         display: block;
     }
-
-    .nav-link:hover{
+    .nav-link:hover {
         background-color: grey;
     }
     .show-nav-button {
         display: initial;
-        width: 100%;
+        width: 99%;
         height: 100%;
         background-color: black;
         text-align: right;
         color: white;
-            outline: none;
-
+        outline: none;
         border: none;
     }
     .ul-links {
@@ -168,7 +167,7 @@ body {
         height: 30px;
         width: 100%;
     }
-    .nav-inline{
+    .nav-inline {
         display: block;
     }
     .ul-links.shown {
@@ -180,5 +179,19 @@ body {
     }
     body {
         margin: 60px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .page-header {
+    height: 50px;}
+        .int-link {
+            padding-top: 80px;
+        margin-top: -80px;}
+
+            body {
+                margin: 80px 0px 0px 0px;
+            }
+        }
     }
 }
