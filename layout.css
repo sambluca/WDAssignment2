@@ -151,7 +151,7 @@ body {
         padding-bottom: 10px;
     }
     .nav-link:hover {
-        background-color: #ffdf43;
+        background-color: grey;
     }
     .show-nav-button {
         display: initial;
