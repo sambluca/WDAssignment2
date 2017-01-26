@@ -175,7 +175,7 @@ body {
                 font-size: 15px;
 
         background-color: black;
-        height: 30px;
+        height: 40px;
         width: 100%;
     }
     .nav-inline {
@@ -185,18 +185,18 @@ body {
         display: initial;
     }
     .bdy.shown {
-        margin: 209px 0px 0px 0px;
+        margin: 210px 0px 0px 0px;
     }
     .int-link.shown {
-        padding-top: 209px;
-        margin-top: -209px;
+        padding-top: 215px;
+        margin-top: -215px;
     }
     .int-link {
-        padding-top: 70px;
-        margin-top: -70px;
+        padding-top: 80px;
+        margin-top: -80px;
     }
     body {
-        margin: 60px 0px 0px 0px;
+        margin: 70px 0px 0px 0px;
     }
 }
 
