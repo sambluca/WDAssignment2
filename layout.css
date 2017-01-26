@@ -150,9 +150,7 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .nav-link:hover {
-        background-color: grey;
-    }
+   
     .show-nav-button {
         display: initial;
         width: 99%;
