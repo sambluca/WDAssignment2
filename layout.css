@@ -34,7 +34,7 @@ body {
     width: 100%;
 }
 
-.image-caption{
+.image-caption {
     margin-top: 20px
 }
 
@@ -96,9 +96,9 @@ body {
 @media screen and (max-width: 921px) {
     .image-container {
         width: 40%;
-         margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .image-circle {
         width: 40vw;
@@ -150,11 +150,11 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-   
     .show-nav-button {
         display: initial;
-        width: 99%;
+        width: 100%;
         height: 100%;
+        vertical-align: middle;
         background-color: black;
         text-align: right;
         font-size: 15px;
@@ -170,8 +170,7 @@ body {
     }
     .page-nav {
         text-align: left;
-                font-size: 15px;
-
+        font-size: 15px;
         background-color: black;
         height: 35px;
         width: 100%;
@@ -185,17 +184,13 @@ body {
     .bdy.shown {
         margin: 210px 0px 0px 0px;
     }
-
     .up-arrow {
         display: none;
     }
-
     .up-arrow.shown {
         display: initial;
-        fill: white !important;
     }
-
-    .down-arrow {
+    .arrows {
         fill: white !important;
     }
     .down-arrow.shown {
