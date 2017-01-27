@@ -173,7 +173,7 @@ body {
                 font-size: 15px;
 
         background-color: black;
-        height: 35px;
+        height: 30px;
         width: 100%;
     }
     .nav-inline {
@@ -184,6 +184,22 @@ body {
     }
     .bdy.shown {
         margin: 210px 0px 0px 0px;
+    }
+
+    .up-arrow {
+        display: none;
+    }
+
+    .up-arrow.shown {
+        display: initial;
+        fill: white !important;
+    }
+
+    .down-arrow {
+        fill: white !important;
+    }
+    .down-arrow.shown {
+        display: none;
     }
     .int-link.shown {
         padding-top: 215px;
