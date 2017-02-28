@@ -17,6 +17,8 @@ body {
 
 .image-container {
     width: 30%;
+    vertical-align: top;
+
     text-align: center;
     display: inline-block;
 }
@@ -141,6 +143,11 @@ body {
     }
     .image-container {
         width: 100%;
+    }
+
+    .image-caption {
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .text-container {
         width: 100%;
