@@ -215,6 +215,7 @@ input[type="submit"]:hover {
         color: white;
         outline: none;
         border: none;
+        cursor: pointer;
     }
     .page-header {
         height: 30px;
