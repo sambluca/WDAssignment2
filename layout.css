@@ -106,8 +106,6 @@ body {
     text-align: left;
 }
 
-
-
 label {
     display: block;
     padding-bottom: 0.2em;
@@ -181,7 +179,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 440px) {
     .page-footer {
-    height: 50px;
+        height: 50px;
     }
     .image-circle {
         width: 60vw;
