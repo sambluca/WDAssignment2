@@ -134,6 +134,7 @@ input[type="submit"] {
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: bold;
+    -webkit-appearance: none;
 }
 
 input[type="submit"]:hover {
