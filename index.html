@@ -1,26 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-<script>
-    function buttonClick() {
-        document.getElementById("ul-links").classList.toggle("shown");
-        document.getElementById("bdy").classList.toggle("shown");
-        document.getElementById("down-a").classList.toggle("shown");
-        document.getElementById("up-a").classList.toggle("shown");
-
-
-
-        var sectionIDs = document.getElementsByClassName("int-link");
-        console.log(sectionIDs);
-        for (var i = 0; i < sectionIDs.length; i++) {
-            sectionIDs[i].classList.toggle("shown");
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector('#menu-btn').addEventListener('click', buttonClick);
-
-    });
-</script>
 
 <head>
     <meta charset="UTF-8">
@@ -28,8 +7,48 @@
     <!-- meta tags for Internet Explorer and mobile devices -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        function buttonClick() {
+            document.getElementById("ul-links").classList.toggle("shown");
+            document.getElementById("bdy").classList.toggle("shown");
+            document.getElementById("down-a").classList.toggle("shown");
+            document.getElementById("up-a").classList.toggle("shown");
+            var sectionIDs = document.getElementsByClassName("int-link");
+            console.log(sectionIDs);
+            for (var i = 0; i < sectionIDs.length; i++) {
+                sectionIDs[i].classList.toggle("shown");
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('#menu-btn').addEventListener('click', buttonClick);
+        });
+
+        $(document).ready(function () {
+            $('.js-hide-content').hide();
+
+            $('.js-hide-content').after(
+                '<a href="#" class="js-show-content contact-button" >Click here for the contact us form</a>'
+            );
+
+
+            $('.js-show-content').on('click', function (e) {
+                e.preventDefault();
+                $('.js-hide-content').slideToggle('300', function () {
+
+                    $('.js-show-content').fadeOut('300', function () {
+                        $('.js-show-content').remove();
+                    });
+
+                });
+
+            });
+
+        });
+    </script>
     <title>Luca Tramontana Portfolio</title>
-    <link rel="stylesheet" href="layout.css" /> </head>
+</head>
 <div class="nav-header">
     <header class="page-header header-container">
         <div class="header-content">
@@ -155,24 +174,27 @@
         <section id="contact" class="contact-me int-link container">
             <div class="container-content">
                 <h2>Contact Me</h2>
-                <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
-                    <p>
-                        <label for="contact-name">Your Name</label>
-                        <input id="contact-name" type="text" name="contact-name" class="input" />
-                    </p>
-                    <p>
-                        <label for="contact-email">Your email address</label>
-                        <input id="contact-email" type="email" name="contact-email" class="input" /> </p>
-                    <p>
-                        <label for="contact-phone">Your phone number</label>
-                        <input id="contact-phone" type="tel" name="contact-phone" class="input" /> </p>
-                    <p>
-                        <label for="contact-message">Your message</label>
-                        <textarea id="contact-message" name="contact-message" rows="5" class="input"> </textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="send my message" /> </p>
-                </form>
+                <div class="js-hide-content">
+                    <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" class="input" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" class="input" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" class="input" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5" class="input"> </textarea>
+                        </p>
+                        <p>
+                            <input class="contact-button" type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
             </div>
         </section>
         <footer class="page-footer">
