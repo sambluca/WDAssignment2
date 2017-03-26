@@ -42,6 +42,7 @@ body {
 .content {
     text-align: left;
 }
+
 .nav-header {
     background-color: #ffdf43;
     position: fixed;
@@ -136,7 +137,6 @@ input[type="submit"]:hover {
     text-transform: uppercase;
     font-weight: bold;
     -webkit-appearance: none;
-
 }
 
 @media screen and (max-width: 921px) {
@@ -177,13 +177,23 @@ input[type="submit"]:hover {
     }
 }
 
+button.slick-next {
+    visibility: hidden;
+
+}
+
+
+
 @media screen and (max-width: 440px) {
     .page-footer {
         height: 50px;
     }
-  .image-gallery .image-container {
-    flex-basis: 33%;
-  }
+    .image-gallery .content {
+        display: flex;
+    }
+    .image-gallery .image-container {
+        flex-basis: 33%;
+    }
     .image-circle {
         width: 60vw;
         height: 60vw;
