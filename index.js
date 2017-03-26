@@ -11,28 +11,16 @@
              });
          });
      });
-
-     function controlgallery() {
-         if (window.matchMedia('(max-width: 440px)').matches) {
-             $(".js-carousel").slick({
-                 adaptiveHeight: true,
-                 prevArrow: ''
-             });
-         } else {
-             $(".js-carousel").slick('unslick');
-         }
-     }
-     window.addEventListener('resize', function () {
-         if (window.matchMedia('(max-width: 440px)').matches) {
-             $(".js-carousel").slick({
-                 adaptiveHeight: true,
-                 prevArrow: ''
-             });
-         } else {
-             $(".js-carousel").slick('unslick');
-         }
-     });
-     controlgallery();
+    //  window.addEventListener('resize', function () {
+    //      if (window.matchMedia('(max-width: 440px)').matches) {
+    //          $(".js-carousel").slick({
+    //              adaptiveHeight: true,
+    //              prevArrow: ''
+    //          });
+    //      } else {
+    //          $(".js-carousel").slick('unslick');
+    //      }
+    //  });
  });
 
  function buttonClick() {
