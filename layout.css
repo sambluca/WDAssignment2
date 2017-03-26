@@ -38,12 +38,14 @@ body {
 .image-caption {
     margin-top: 20px
 }
+
 .content {
     text-align: left;
 }
 .nav-header {
     background-color: #ffdf43;
     position: fixed;
+    z-index: 1;
     top: 0;
     font-size: 80%;
     width: 100%;
@@ -179,6 +181,9 @@ input[type="submit"]:hover {
     .page-footer {
         height: 50px;
     }
+  .image-gallery .image-container {
+    flex-basis: 33%;
+  }
     .image-circle {
         width: 60vw;
         height: 60vw;
