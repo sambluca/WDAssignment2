@@ -1,26 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-<script>
-    function buttonClick() {
-        document.getElementById("ul-links").classList.toggle("shown");
-        document.getElementById("bdy").classList.toggle("shown");
-        document.getElementById("down-a").classList.toggle("shown");
-        document.getElementById("up-a").classList.toggle("shown");
-
-
-
-        var sectionIDs = document.getElementsByClassName("int-link");
-        console.log(sectionIDs);
-        for (var i = 0; i < sectionIDs.length; i++) {
-            sectionIDs[i].classList.toggle("shown");
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector('#menu-btn').addEventListener('click', buttonClick);
-
-    });
-</script>
 
 <head>
     <meta charset="UTF-8">
@@ -28,8 +7,12 @@
     <!-- meta tags for Internet Explorer and mobile devices -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="index.js"></script>
     <title>Luca Tramontana Portfolio</title>
-    <link rel="stylesheet" href="layout.css" /> </head>
+</head>
 <div class="nav-header">
     <header class="page-header header-container">
         <div class="header-content">
@@ -112,9 +95,8 @@
         <section id="images" class="image-gallery container int-link">
             <div class="container-content">
                 <h2>Image Gallery</h2>
-                <div class="">
+                <div class="js-carousel">
                     <div class="image-container">
-                        <!-- add image one here with 150 word maximum caption -->
                         <div class="image-circle">
                             <img class="image-gallery" src="images/ian.jpg" alt="Photo of Me meeting he wonderful Sir Ian Mckellen">
                         </div>
@@ -126,7 +108,6 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <!-- add image two here with 150 word maximum caption -->
                         <div class="image-circle">
                             <img class="image-gallery" src="images/macron.JPG" alt="Photo of Luca and team mates walking away from a lively crowd on Bolton Wanderers Football stadium, taken Spring 2016">
                         </div>
@@ -139,7 +120,6 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <!-- add image three here with 150 word maximum caption -->
                         <div class="image-circle">
                             <img class="image-gallery" src="images/rome.JPG" alt="Photo of the Colosseum in Rome, taken Summer 2016">
                         </div>
@@ -149,30 +129,50 @@
                             I have ever seen in person is the Coliseum. It’s huge, intimidating and absolutely wonderful.
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </section>
+       
         <section id="contact" class="contact-me int-link container">
             <div class="container-content">
                 <h2>Contact Me</h2>
-                <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
-                    <p>
-                        <label for="contact-name">Your Name</label>
-                        <input id="contact-name" type="text" name="contact-name" class="input" />
-                    </p>
-                    <p>
-                        <label for="contact-email">Your email address</label>
-                        <input id="contact-email" type="email" name="contact-email" class="input" /> </p>
-                    <p>
-                        <label for="contact-phone">Your phone number</label>
-                        <input id="contact-phone" type="tel" name="contact-phone" class="input" /> </p>
-                    <p>
-                        <label for="contact-message">Your message</label>
-                        <textarea id="contact-message" name="contact-message" rows="5" class="input"> </textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="send my message" /> </p>
-                </form>
+                <div class="js-hide-content">
+                    <form action="https://formspree.io/gianluca.tramontana@stu.mmu.ac.uk" method="post">
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" class="input" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" class="input" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" class="input" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5" class="input"> </textarea>
+                        </p>
+                        <p>
+                            <input class="contact-button" type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p> <span class="footer-text">&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2017</a>
+    </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Gianluca Tramontana</span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">Tutor <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a></span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a>
+        </span> </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>         </form>
             </div>
         </section>
         <footer class="page-footer">
