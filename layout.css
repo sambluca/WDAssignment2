@@ -225,9 +225,7 @@ input[type="submit"]:hover {
         overflow-x: hidden;
     }
     .text-container {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 10px;
+        width: 90%;
     }
     body {
         margin: 70px 0px 0px 0px;
