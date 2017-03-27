@@ -182,6 +182,11 @@ button.slick-next {
 }
 
 @media screen and (max-width: 440px) {
+
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
     .page-footer {
         height: 50px;
     }
@@ -270,6 +275,18 @@ button.slick-next {
     }
     body {
         margin: 70px 0px 0px 0px;
+    }
+    .slick-arrow {
+        display: inline-block;
+        min-width: auto;
+        max-width: auto;
+        background-color: #ffdf43;
+        border: 0;
+        padding: 10px 30px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        -webkit-appearance: none;
     }
 }
 

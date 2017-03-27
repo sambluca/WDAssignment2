@@ -15,8 +15,7 @@
      function controlgallery() {
          if (window.matchMedia('(max-width: 440px)').matches) {
              $(".js-carousel").slick({
-                 adaptiveHeight: true,
-
+                 adaptiveHeight: true
              });
          } else {
              $(".js-carousel").slick('unslick');
