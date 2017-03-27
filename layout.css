@@ -139,10 +139,6 @@ input[type="submit"]:hover {
     -webkit-appearance: none;
 }
 
-.slick-track {
-    overflow: hidden !important;
-}
-
 @media screen and (max-width: 921px) {
     .image-container {
         width: 40%;
