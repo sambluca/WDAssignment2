@@ -1,3 +1,4 @@
+ //When the page is ready do this, all jQuery stuff given to use by our Tutor to use
  $(document).ready(function () {
      $('.js-hide-content').hide();
      $('.js-hide-content').after(
@@ -28,17 +29,20 @@
      controlgallery();
  });
 
+ //This function when called adds shown to the end off the elements class, I use this to create an interactive drop down menu
  function buttonClick() {
      document.getElementById("ul-links").classList.toggle("shown");
      document.getElementById("bdy").classList.toggle("shown");
      document.getElementById("down-a").classList.toggle("shown");
      document.getElementById("up-a").classList.toggle("shown");
+     //This for loop is there so you can loop through each content section and add shown to the end, 
+     //this is useful if you wanted to add more content sections to the site
      var sectionIDs = document.getElementsByClassName("int-link");
-     console.log(sectionIDs);
      for (var i = 0; i < sectionIDs.length; i++) {
          sectionIDs[i].classList.toggle("shown");
      }
  }
+ //This just checks to see if the button has been clicked and when it does get clicked, run the function
  document.addEventListener("DOMContentLoaded", function () {
      document.querySelector('#menu-btn').addEventListener('click', buttonClick);
  });
