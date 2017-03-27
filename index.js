@@ -16,6 +16,7 @@
          if (window.matchMedia('(max-width: 440px)').matches) {
              $(".js-carousel").slick({
                  adaptiveHeight: true,
+                 horizontalSwiping: false
 
              });
          } else {
