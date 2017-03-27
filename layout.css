@@ -1,4 +1,7 @@
+/* General classes used for the whole page */
+
 body {
+    /*margin and padding are here to resest predefined margin and padding values set by the browser */
     font-family: "Arial", Gadget, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,11 +14,33 @@ body {
     padding: 0;
 }
 
+.content {
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+}
+
+.text-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 75vw;
+}
+
+
+/* Mobile divs */
+
 .show-nav-button {
+    /*only should be visible for mobile so hidden here */
     display: none;
 }
 
+
+/* Image Gallery */
+
 .image-container {
+    /* aligned to top so it sits at the top of the div instead of the bottom, inline block keeps them next to each other */
     width: 30%;
     vertical-align: top;
     text-align: center;
@@ -23,6 +48,7 @@ body {
 }
 
 .image-circle {
+    /* this makes the images into a circle, overflow hides the image not in the circle*/
     border-radius: 50%;
     overflow: hidden;
     width: 25vw;
@@ -39,25 +65,23 @@ body {
     margin-top: 20px
 }
 
-.content {
-    text-align: left;
+
+/* Navigation styling */
+
+.page-header {
+    text-align: center;
+    height: 20px;
 }
 
 .nav-header {
     background-color: #ffdf43;
-    position: fixed;
-    z-index: 1;
-    top: 0;
     font-size: 80%;
     width: 100%;
-}
-
-.page-footer {
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: #e6e6e6;
-    text-align: center;
+    /*postion fixed and top 0 keeps the nav bar at the top of the page constantly */
+    position: fixed;
+    top: 0;
+    /* keeps it always on top so nothing can scroll over it */
+    z-index: 1;
 }
 
 .page-nav {
@@ -87,25 +111,35 @@ body {
     color: black;
 }
 
-.page-header {
-    text-align: center;
-    height: 20px;
-}
-
-.container {
-    text-align: center;
-}
-
-.text-container {
-    text-align: center;
-    margin: 0 auto;
-    width: 75vw;
-}
-
 .int-link {
     padding-top: 80px;
     margin-top: -80px;
 }
+
+
+/* Footer Styling */
+
+.page-footer {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #e6e6e6;
+    text-align: center;
+}
+
+.social-media {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.fa {
+    padding-bottom: 5px;
+    padding-top:    5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* Form Styling */
 
 label {
     display: block;
@@ -140,6 +174,7 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 921px) {
+    /* Image Gallery just changing the size of the images*/
     .image-container {
         width: 40%;
         margin-top: 10px;
@@ -150,21 +185,25 @@ input[type="submit"]:hover {
         width: 40vw;
         height: 40vw;
     }
+    /* General classes used for the whole page */
     .text-container {
         width: 75%;
     }
+    /* Navigation Styling */
     .page-header {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 638px) {
+    /* General classes used for the whole page */
     .text-container {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 562px) {
+    /* Image Gallery just changing the size of the images*/
     .image-circle {
         width: 60vw;
         height: 60vw;
@@ -172,30 +211,30 @@ input[type="submit"]:hover {
     .image-container {
         width: 90%;
     }
+    /* General classes used for the whole page */
     .text-container {
         width: 90%;
     }
 }
 
-button.slick-next {
-    visibility: hidden;
-}
-
 @media screen and (max-width: 440px) {
-
-    html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-    .page-footer {
-        height: 50px;
+    /* General classes used for the whole page */
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
-    .image-gallery .content {
-        display: flex;
+    .text-container {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 10px;
     }
-    .image-gallery .image-container {
-        flex-basis: 33%;
+    body {
+        margin: 70px 0px 0px 0px;
     }
+    /*Footer Styling */
+    
+    /*Image Gallery*/
     .image-circle {
         width: 60vw;
         height: 60vw;
@@ -207,11 +246,30 @@ button.slick-next {
         margin-right: 5px;
         margin-left: 5px;
     }
-    .text-container {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 10px;
+    /* Styling for the slick carousel */
+    .image-gallery .content {
+        display: flex;
     }
+    .image-gallery .image-container {
+        flex-basis: 33%;
+    }
+    .slick-arrow {
+        display: inline-block;
+        min-width: auto;
+        max-width: auto;
+        background-color: #ffdf43;
+        border: 0;
+        padding: 10px 30px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        -webkit-appearance: none;
+    }
+    button.slick-next {
+        visibility: hidden;
+    }
+    /* Nav styling to change it to the mobile nav */
+    /* when a class has .shown on the end it means the nav links is open, so the padding changes to reflect this */
     .nav-link {
         display: block;
         padding-top: 10px;
@@ -273,24 +331,10 @@ button.slick-next {
         padding-top: 80px;
         margin-top: -80px;
     }
-    body {
-        margin: 70px 0px 0px 0px;
-    }
-    .slick-arrow {
-        display: inline-block;
-        min-width: auto;
-        max-width: auto;
-        background-color: #ffdf43;
-        border: 0;
-        padding: 10px 30px;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        -webkit-appearance: none;
-    }
 }
 
 @media screen and (max-width: 375px) {
+    /* Nav styling */
     .nav-header {
         font-size: 60%;
     }

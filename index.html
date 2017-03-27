@@ -7,51 +7,53 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="index.js"></script>
     <title>Luca Tramontana Portfolio</title>
 </head>
+
 <body id="bdy" class="bdy shown">
     <div class="nav-header">
-    <header class="page-header header-container">
-        <div class="header-content">
-            <h1 class="desktop-header">Gianluca Tramontana Portfolio</h1>
-        </div>
-    </header>
-    <nav class="page-nav header-container ">
-        <button id="menu-btn" class="show-nav-button">
+        <header class="page-header header-container">
+            <div class="header-content">
+                <h1 class="desktop-header">Gianluca Tramontana Portfolio</h1>
+            </div>
+        </header>
+        <nav class="page-nav header-container ">
+            <button id="menu-btn" class="show-nav-button">
             <svg id="down-a" class="down-arrow arrows shown"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32"><path d="M16 29L32 3h-7.2L16 18.3 7.2 3H0z"/></svg>
             <svg id="up-a"  class="up-arrow arrows shown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32"><path d="M16 3L0 29h7.2L16 13.7 24.8 29H32z"/></svg>
         </button>
-        <ul id="ul-links" class="ul-links shown">
-            <li class="nav-inline">
-                <a href="#about">
-                    <div class="nav-link">about</div>
-                </a>
-            </li>
-            <li class="nav-inline">
-                <a href="#work">
-                    <div class="nav-link">work experience</div>
-                </a>
-            </li>
-            <li class="nav-inline">
-                <a href="#images">
-                    <div class="nav-link">images</div>
-                </a>
-            </li>
-            <li class="nav-inline">
-                <a href="#contact">
-                    <div class="nav-link">contact</div>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+            <ul id="ul-links" class="ul-links shown">
+                <li class="nav-inline">
+                    <a href="#about">
+                        <div class="nav-link">about</div>
+                    </a>
+                </li>
+                <li class="nav-inline">
+                    <a href="#work">
+                        <div class="nav-link">work experience</div>
+                    </a>
+                </li>
+                <li class="nav-inline">
+                    <a href="#images">
+                        <div class="nav-link">images</div>
+                    </a>
+                </li>
+                <li class="nav-inline">
+                    <a href="#contact">
+                        <div class="nav-link">contact</div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <main>
+
         <div id="about"></div>
         <section class="about-me text-container int-link shown">
-
             <div class="container-content">
                 <h2>About Me</h2>
                 <div class="content">
@@ -68,6 +70,7 @@
                 </div>
             </div>
         </section>
+
         <section id="work" class="work-experience text-container int-link shown">
             <div class="container-content">
                 <h2>Work Experience</h2>
@@ -89,6 +92,7 @@
                 </div>
             </div>
         </section>
+
         <section id="images" class="image-gallery container int-link shown">
             <div class="container-content">
                 <h2>Image Gallery</h2>
@@ -131,7 +135,7 @@
 
             </div>
         </section>
-       
+
         <section id="contact" class="contact-me int-link container shown">
             <div class="container-content">
                 <h2>Contact Me</h2>
@@ -157,7 +161,14 @@
                 </div>
             </div>
         </section>
+
         <footer class="page-footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x" style="color: #3b5998;" aria-hidden="true"></i></a>
+                <a href="https://www.tumblr.com"><i class="fa fa-tumblr fa-2x" style="color: #36465d;" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x" style="color: #4099FF;" aria-hidden="true"></i></a>
+                <a href="https://www.twitch.tv/"><i class="fa fa-twitch fa-2x" style="color: #6441a5;" aria-hidden="true"></i></a>
+            </div>
             <div class="footer-content">
                 <p> <span class="footer-text">&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2017</a>
     </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Gianluca Tramontana</span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">Tutor <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a></span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">
@@ -165,7 +176,8 @@
         </span> </p>
             </div>
         </footer>
+
     </main>
 </body>
 
-</html>        
+</html>
